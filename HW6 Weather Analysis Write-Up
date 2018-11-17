@@ -1,7 +1,0 @@
-WeatherPy Analysis HW6
-
-1) Looking at the first graph, the data is showing  that cities in latitudes further away from the equator have a lower maximum temperature, which makes sense. Cities closer to the equator are have warmer temperatures and this graph depicts that.
-
-2) Looking at latitude vs humidity, we see that there is no discernable pattern between cities. There are many other factors that could play into humidity such as distance to bodies of water and other geographic factors
-
-3)Latitude vs cloudiness and windspeed also does not show a clear pattern. Just as humidity, there could be other geographic or weather factors that could impact these data points. These data distributions are uniform and we cannot clearly state that one factor is because of another.
