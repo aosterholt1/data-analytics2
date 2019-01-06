@@ -1,0 +1,27 @@
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(4, 156,145,0.8);
+  font-size: 40px;
+  font-style:bold;  
+}
+
+.text {
+  float: right;
+}
+h2{color: lightseagreen}
+span{color:white}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.caret{color:black}
