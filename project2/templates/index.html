@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YouTube Data Analysis</title>
+  <link rel="shortcut icon" href="http://localhost:5000" />
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>YouTube Data Analysis</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h5 class="panel-title">Chart Type:</h5>
+			<div class="form-group">
+				<select class="custom-select" id="selChartType" onchange="optionSelected(this.id)">
+				  <option value="Pie" selected="selected">Pie</option>
+          <option value="Bar">Bar</option>
+          <option value="Treemap">Treemap</option>
+				</select>
+			</div>
+          </div>
+        </div>
+		<div class="panel panel-primary">
+          <div class="panel-heading">
+            <h5 class="panel-title">Dataset:</h5>
+			<div class="form-group">
+				<select class="custom-select" id="selDataset" onchange="optionSelected(this.id)">
+				  <option value="Subscribers" selected="selected">Subscriber Count</option>
+				  <option value="Videoviews">Video views</option>
+				  <option value="Videouploads">Video uploads</option>
+				</select>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="chart"></div>
+        <!-- <div id='chart-container'></div> -->
+      </div>
+    </div>
+  </div>
+  
+  <title>My first chart using FusionCharts Suite XT</title>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js></script>
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script type="module" src="app.js"></script>
+ 
+</body>
+
+</html>
